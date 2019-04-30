@@ -1,7 +1,7 @@
 <?php
 function reply_msg($txtin,$replyToken)//สร้างข้อความและตอบกลับ
 {
-    $access_token = '4p7Yd0WerrBdzCue6kRu0GZ0UH4hCWt7l5UjSVYzbF/y+X3E2LtbAsQHZcDeEuQCmXp4JUNAe3p7VB/s7GnPsfwmlEJytZ5fN1pPxZ18lG2olnlDduB6jkeJVaM3YkK9Fuq5s3vhSEanDQwCT7UJagdB04t89/1O/w1cDnyilFU=';
+    $access_token = 'hc3txgmmJ6fuC7tUNHbxkZYE1YKIi+NuheeGJRSl6HuQGAp4pzaGimI8PhAxJ6+lmXp4JUNAe3p7VB/s7GnPsfwmlEJytZ5fN1pPxZ18lG2KuofLCeOPHyOinvVd8FUcZyiNrcpnCFBvn1mxFIyXyQdB04t89/1O/w1cDnyilFU=';
     $messages = ['type' => 'text','text' => $txtin];//สร้างตัวแปร 
     $url = 'https://api.line.me/v2/bot/message/reply';
     $data = [
@@ -22,7 +22,7 @@ function reply_msg($txtin,$replyToken)//สร้างข้อความแ�
 }
 
 // รับข้อมูล
-require('connect_db.php');
+require('connect_db.php');4p7Yd0WerrBdzCue6kRu0GZ0UH4hCWt7l5UjSVYzbF
 $content = file_get_contents('php://input');//รับข้อมูลจากไลน์
 $events = json_decode($content, true);//แปลง json เป็น php
 if (!is_null($events['events'])) //check ค่าในตัวแปร $events
