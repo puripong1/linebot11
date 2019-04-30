@@ -1,9 +1,13 @@
 function test()
 {
-var office = document.getElementById('office_select').value;
+	var office = document.getElementById('office_select').value;
 alert(office);
 }
 
+function render_card()
+{
+	
+}
 function search()
 {
     var office_select = document.getElementById("office_select").value
