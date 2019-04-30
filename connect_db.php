@@ -9,5 +9,5 @@
         die("Connection failed: " . $conn->connect_error);
     }
     mysqli_query($conn, "SET NAMES utf8");
-    echo "testest";
+    //echo "testest";
 ?>
