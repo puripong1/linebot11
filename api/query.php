@@ -1,5 +1,5 @@
 <?php
-    require('connect_db.php');
+    require('../connect_db.php');
 
     $office = $_POST["office"];
     $keyword = $_POST["keyword"];
